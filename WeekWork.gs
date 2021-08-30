@@ -1,7 +1,7 @@
 // 週報のブックをIDで取得
 let spreadSheet = SpreadsheetApp.openById('1xUNYqS9l91BIDbI4oDO8ZOPe4bOl3RB_d-CuC2ulwxE');
 
-function updateWeekWork(){
+function UpdateWeekWork(){
   // 実行する日の日付を取得
   var date = new Date();
 
@@ -27,7 +27,7 @@ function updateWeekWork(){
   copySheet.getRange("D5").setValue(sundayDate);
 }
 
-function sendWeekWork(){
+function SendWeekWork(){
   //スプレッドシートオブジェクトからIDを取り出す
   var fileId   = spreadSheet.getId();
 
